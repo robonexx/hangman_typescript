@@ -1,6 +1,9 @@
 import { useState } from "react";
 import words from "../wordlist.json";
 import "./App.css";
+import { GuessDrawing } from "./GuessDrawing/GuessDrawing";
+import Keyboard from "./Keyboard/Keyboard";
+import TheGuessWord from "./TheGuessWord/TheGuessWord";
 
 /* 
 todo in project
@@ -19,8 +22,11 @@ function App() {
   const [guessedLetters, setGuessesLetters] = useState<string[]>([]);
   return (
     <div className="App">
-      <h1>Hangman</h1>
+      <h1>Word Guess 2022</h1>
       <h2>Information</h2>
+      <GuessDrawing />
+      {/* <TheGuessWord />
+      <Keyboard /> */}
       <h2 className="guessWord">{wordGuess}</h2>
     </div>
   );
