@@ -1,7 +1,18 @@
 import React from "react";
+import "./Keyboard.css";
 
 export default function Keyboard() {
-  return <div>Keyboard</div>;
+  const active = "active";
+  const inactive = "inactive";
+  return (
+    <div className="keyboard">
+      {KEYBOARD_KEYS.map((letter) => (
+        <button key={letter} className={`btn ${inactive}`}>
+          {letter}
+        </button>
+      ))}
+    </div>
+  );
 }
 
 /* letters array for keyboard keys */

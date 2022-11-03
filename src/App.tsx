@@ -25,8 +25,7 @@ function App() {
       <h1>Word Guess 2022</h1>
       <h2>Information</h2>
       <GuessDrawing />
-      {/* <TheGuessWord />
-      <Keyboard /> */}
+      <Keyboard />
       {/* <h2 className="guessWord">{wordGuess}</h2> */}
       <TheGuessWord />
     </div>
