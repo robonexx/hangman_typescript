@@ -17,7 +17,7 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-.btn:hover,
+.btn:hover:not(:disabled),
 .btn:focus {
   background-color: #382828;
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.459));

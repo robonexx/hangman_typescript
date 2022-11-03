@@ -7,7 +7,8 @@ export default function Keyboard() {
   return (
     <div className="keyboard">
       {KEYBOARD_KEYS.map((letter) => (
-        <button key={letter} className={`btn ${inactive}`}>
+        /* ${active} ${inactive} */
+        <button key={letter} className={`btn ${""}`}>
           {letter}
         </button>
       ))}
