@@ -27,7 +27,8 @@ function App() {
       <GuessDrawing />
       {/* <TheGuessWord />
       <Keyboard /> */}
-      <h2 className="guessWord">{wordGuess}</h2>
+      {/* <h2 className="guessWord">{wordGuess}</h2> */}
+      <TheGuessWord />
     </div>
   );
 }

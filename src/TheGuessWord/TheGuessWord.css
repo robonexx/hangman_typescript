@@ -1,0 +1,15 @@
+.guessWord {
+  font-family: "Noto sans", sans-serif;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  line-height: 100%;
+}
+
+.letterContainer {
+  border-bottom: 0.1em solid rgb(207, 41, 19);
+}
