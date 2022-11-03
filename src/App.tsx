@@ -16,18 +16,27 @@ create hangman or other way of showing amount of guesses
 
 function App() {
   const [wordGuess, setWordGuess] = useState(() => {
-    return words[Math.floor(Math.random() * words.length)];
+    return "Confused";
+    /*  return words[Math.floor(Math.random() * words.length)]; */
   });
+  const [guessedLetters, setGuessesLetters] = useState<string[]>([
+    "w",
+    "o",
+    "b",
+  ]);
 
-  const [guessedLetters, setGuessesLetters] = useState<string[]>([]);
+  const incorrectGuesses = guessedLetters.filter(
+    (letter) => !wordGuess.includes(letter)
+  );
   return (
     <div className="App">
       <h1>Word Guess 2022</h1>
       <h2>Information</h2>
-      <GuessDrawing />
+      <GuessDrawing guesses={incorrectGuesses.length} />
       <Keyboard />
       {/* <h2 className="guessWord">{wordGuess}</h2> */}
       <TheGuessWord />
+      {wordGuess}
     </div>
   );
 }
