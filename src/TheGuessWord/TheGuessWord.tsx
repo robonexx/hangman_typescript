@@ -7,7 +7,7 @@ export default function TheGuessWord() {
   return (
     <div className="guessWord">
       {word.split("").map((letter, idx) => (
-        <span className="letterContainer">
+        <span className="letterContainer" key={idx}>
           <span
             /* using inline styles to show, would probably have been nice to use styled components, will do so in next project ;) */
             style={{
